@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Web App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navigation -->
+  <nav class="bg-white shadow p-4 flex justify-between">
+    <h1 class="text-xl font-bold">WebApp</h1>
+    <div class="space-x-4">
+      <a href="#dashboard" class="hover:text-blue-500">Dashboard</a>
+      <a href="#users" class="hover:text-blue-500">Users</a>
+      <a href="#products" class="hover:text-blue-500">Products</a>
+      <a href="#reports" class="hover:text-blue-500">Reports</a>
+      <a href="#settings" class="hover:text-blue-500">Settings</a>
+    </div>
+  </nav>
+
+  <!-- Login Page -->
+  <section id="login" class="min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 shadow rounded w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-4">Login</h2>
+      <input class="w-full mb-3 p-2 border rounded" type="email" placeholder="Email" />
+      <input class="w-full mb-3 p-2 border rounded" type="password" placeholder="Password" />
+      <button class="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+      <p class="mt-2 text-sm text-right text-blue-500 cursor-pointer">Forgot Password?</p>
+    </div>
+  </section>
+
+  <!-- Dashboard -->
+  <section id="dashboard" class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">Dashboard</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white p-4 rounded shadow">Total Users: 120</div>
+      <div class="bg-white p-4 rounded shadow">Active Sessions: 45</div>
+      <div class="bg-white p-4 rounded shadow">Reports: 20</div>
+    </div>
+  </section>
+
+  <!-- User Management -->
+  <section id="users" class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">User Management</h2>
+    <div class="mb-4 flex justify-between">
+      <input class="p-2 border rounded w-1/2" placeholder="Search users..." />
+      <button class="bg-green-500 text-white p-2 rounded">Add User</button>
+    </div>
+    <table class="w-full table-auto border shadow">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="p-2 border">Name</th>
+          <th class="p-2 border">Email</th>
+          <th class="p-2 border">Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="p-2 border">Jane Doe</td>
+          <td class="p-2 border">jane@example.com</td>
+          <td class="p-2 border">Admin</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Products Page -->
+  <section id="products" class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">Products</h2>
+    <div class="mb-4 flex justify-between">
+      <input class="p-2 border rounded w-1/2" placeholder="Search products..." />
+      <button class="bg-green-600 text-white p-2 rounded">Add Product</button>
+    </div>
+    <table class="w-full table-auto border shadow">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="p-2 border">Product Name</th>
+          <th class="p-2 border">Category</th>
+          <th class="p-2 border">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="p-2 border">Wireless Mouse</td>
+          <td class="p-2 border">Electronics</td>
+          <td class="p-2 border">$25.99</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Reports -->
+  <section id="reports" class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">Reports</h2>
+    <div class="flex gap-4 mb-4">
+      <input type="date" class="p-2 border rounded" />
+      <button class="bg-blue-600 text-white p-2 rounded">Download PDF</button>
+    </div>
+    <div class="bg-white p-4 rounded shadow">[Graph Placeholder]</div>
+  </section>
+
+  <!-- Settings -->
+  <section id="settings" class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">Settings</h2>
+    <div class="space-y-4">
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Profile Settings</h3>
+        <input class="w-full mt-2 p-2 border rounded" placeholder="Username" />
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Notifications</h3>
+        <label class="flex items-center space-x-2 mt-2">
+          <input type="checkbox" /> <span>Email Alerts</span>
+        </label>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Theme</h3>
+        <button class="mt-2 bg-gray-800 text-white px-4 py-2 rounded">Switch to Dark Mode</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
