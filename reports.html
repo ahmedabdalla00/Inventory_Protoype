@@ -3,27 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inventory Management Prototype</title>
+  <title>Reports - Inventory Management</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
-  <!-- Navigation -->
   <nav class="bg-white shadow p-4 flex justify-between">
     <h1 class="text-xl font-bold">Inventory Management Prototype</h1>
     <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
       <a href="dashboard.html" class="hover:text-blue-500">Dashboard</a>
       <a href="users.html" class="hover:text-blue-500">Users</a>
       <a href="products.html" class="hover:text-blue-500">Products</a>
-      <a href="reports.html" class="hover:text-blue-500">Reports</a>
       <a href="settings.html" class="hover:text-blue-500">Settings</a>
     </div>
   </nav>
-  <!-- Home Page Content -->
-  <section class="min-h-screen flex flex-col items-center justify-center">
-    <div class="bg-white p-8 shadow rounded w-full max-w-lg text-center">
-      <h2 class="text-3xl font-bold mb-4">Welcome to Inventory Management</h2>
-      <p class="mb-6 text-gray-600">Manage your users, products, and reports efficiently.</p>
-      <a href="login.html" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Login</a>
+  <section class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">Reports</h2>
+    <div class="flex gap-4 mb-4">
+      <input type="date" class="p-2 border rounded" />
+      <button class="bg-blue-600 text-white p-2 rounded">Download PDF</button>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <div class="text-center text-gray-500">[Graph Placeholder]</div>
+      <ul class="mt-4 text-left text-gray-700">
+        <li>• Sales Report - June 2024</li>
+        <li>• Inventory Status - June 2024</li>
+        <li>• User Activity - June 2024</li>
+      </ul>
     </div>
   </section>
 </body>

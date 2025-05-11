@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Inventory Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <nav class="bg-white shadow p-4 flex justify-between">
+    <h1 class="text-xl font-bold">Inventory Management Prototype</h1>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <a href="dashboard.html" class="hover:text-blue-500">Dashboard</a>
+      <a href="users.html" class="hover:text-blue-500">Users</a>
+      <a href="reports.html" class="hover:text-blue-500">Reports</a>
+      <a href="settings.html" class="hover:text-blue-500">Settings</a>
+    </div>
+  </nav>
+  <section class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">Products</h2>
+    <div class="mb-4 flex justify-between">
+      <input class="p-2 border rounded w-1/2" placeholder="Search products..." />
+      <button class="bg-green-600 text-white p-2 rounded">Add Product</button>
+    </div>
+    <table class="w-full table-auto border shadow">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="p-2 border">Product Name</th>
+          <th class="p-2 border">Category</th>
+          <th class="p-2 border">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="p-2 border">Wireless Mouse</td>
+          <td class="p-2 border">Electronics</td>
+          <td class="p-2 border">$25.99</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="p-2 border">Office Chair</td>
+          <td class="p-2 border">Furniture</td>
+          <td class="p-2 border">$89.99</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="p-2 border">Notebook</td>
+          <td class="p-2 border">Stationery</td>
+          <td class="p-2 border">$2.50</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
